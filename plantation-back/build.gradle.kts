@@ -8,8 +8,8 @@ plugins {
 }
 
 group = "org.makc1mm"
-version = "0.0.1-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+version = "1.0"
+java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
 	mavenCentral()
