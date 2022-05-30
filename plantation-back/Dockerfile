@@ -1,9 +1,9 @@
 FROM gradle:jdk11-alpine AS build
-COPY gradle /home/gradle
-COPY build.gradle.kts /home
-COPY settings.gradle.kts /home
-COPY src /home/src
 WORKDIR /home
+COPY gradle /gradle
+COPY build.gradle.kts .
+COPY settings.gradle.kts .
+COPY src /home/src
 RUN gradle build -x test --no-daemon
 
 FROM openjdk:11-jre-slim

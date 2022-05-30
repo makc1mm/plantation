@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  backend:
+    build: ./plantation-back/
+    ports:
+      - "8081:8081"
+
+  frontend:
+    build: ./plantation-front/
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend

@@ -21,12 +21,12 @@ export default {
     },
     actions: {
         addWater() {
-            axios.post("/api/addWater").then(_ => {
+            axios.post("http://localhost:8081/api/addWater").then(_ => {
                 console.log("Water was added")
             })
         },
         pickUpPlants() {
-            axios.post("/api/pickUpPlants").then(_ => {
+            axios.post("http://localhost:8081/api/pickUpPlants").then(_ => {
                 console.log("Plants was picked up")
             })
         },
